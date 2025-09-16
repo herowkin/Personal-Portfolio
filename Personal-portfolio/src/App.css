@@ -1,77 +1,64 @@
-/* 
- * File: App.css
- * Student: Braiden Jensen
- * StudentID: 123456789
- * Date: 2025-09-16
- * Purpose: Global styles for portfolio site
- */
 
-/* General page setup */
+/* Global styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: #f9fafb;
   color: #111827;
+  background: linear-gradient(135deg, #3b82f6, #06b6d4, #9333ea);
+  background-attachment: fixed;
+  background-size: 400% 400%;
+  animation: gradientMove 15s ease infinite;
 }
 
-section {
-  padding: 2rem;
-}
-
+/* Headings */
 h1, h2, h3 {
   margin-top: 0;
 }
 
-/* Navbar */
+/* Navbar styles */
 nav {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding: 1rem;
   border-bottom: 1px solid #e5e7eb;
-  background: #ffffff;
+  background: #fff;
 }
-
 nav h2 {
   margin-right: auto;
 }
-
 nav button {
   padding: .4rem .8rem;
   border: none;
   background: #cc2a52;
-  color: white;
+  color: #fff;
   border-radius: 6px;
   cursor: pointer;
 }
-
 nav button:hover {
   background: #2563eb;
 }
 
-/* Services cards */
+/* Services section */
 .services-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
   margin-top: 2rem;
 }
-
 .service-card {
   flex: 1 1 250px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #e5e7eb;
   border-radius: 10px;
   padding: 1.5rem;
   text-align: center;
   box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
 }
-
 .service-card:hover {
   transform: translateY(-3px);
-  transition: 0.2s;
 }
-
 .service-icon {
   font-size: 2.5rem;
 }
@@ -82,50 +69,25 @@ nav button:hover {
   gap: .5rem;
   max-width: 300px;
 }
-
 .contact-form input,
 .contact-form textarea {
   padding: .5rem;
   border: 1px solid #d1d5db;
   border-radius: 5px;
 }
-
 .contact-form button {
   padding: .5rem;
   border: none;
   background: #10b981;
-  color: white;
+  color: #fff;
   border-radius: 6px;
   cursor: pointer;
 }
-
 .contact-form button:hover {
   background: #059669;
 }
-/* ===========================
-   Global Page Background
-   =========================== */
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  /* ✨ Gradient background */
-  background: linear-gradient(135deg, #3b82f6, #06b6d4, #9333ea);
-  background-attachment: fixed;
-  background-size: 400% 400%;
-  animation: gradientMove 15s ease infinite;
-
-  color: #111827;
-}
-
-/* Subtle animated movement for gradient */
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* Page content container */
+/* Section container */
 section {
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(4px);
@@ -134,5 +96,12 @@ section {
   margin: 2rem auto;
   max-width: 900px;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Animated background gradient */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 

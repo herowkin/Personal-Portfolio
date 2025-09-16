@@ -6,7 +6,7 @@
  * Purpose: About Me page
  */
 
-import me from "../assets/me.png";
+import me from "../assets/Me.png";
 
 export default function About() {
   return (

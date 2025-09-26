@@ -8,10 +8,9 @@
 export default function Navbar({ setPage }) {
   return (
     <nav style={{ display:"flex", alignItems:"center", gap:"1rem", padding:"1rem", borderBottom:"1px solid #ccc" }}>
-      {/* Custom logo (triangle with initials) */}
+      {/* Custom logo (square with initials) */}
       <div style={{
         width:"40px", height:"40px",
-        clipPath:"polygon(50% 0, 0 100%, 100% 100%)",
         background:"#3b82f6", color:"#fff",
         display:"flex", alignItems:"center", justifyContent:"center",
         fontWeight:"bold"

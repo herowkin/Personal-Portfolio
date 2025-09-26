@@ -105,3 +105,66 @@ section {
   100% { background-position: 0% 50%; }
 }
 
+/* mobile fixes */
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav h2 {
+    width: 100%;
+    margin-bottom: .5rem;
+    text-align: center;
+  }
+
+  nav button {
+    flex: 1 1 100%;
+    margin: .25rem 0;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+    margin: 1rem;
+  }
+
+  .services-grid,
+  .projects-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card,
+  .project-card {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .home-hero h1 {
+    font-size: 2rem;
+  }
+
+  .home-hero p {
+    font-size: 1rem;
+    padding: 0 1rem;
+  }
+
+  .home-buttons {
+    flex-direction: column;
+  }
+
+  .home-buttons button {
+    width: 100%;
+  }
+
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+  }
+}

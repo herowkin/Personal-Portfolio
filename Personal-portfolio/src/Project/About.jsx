@@ -31,7 +31,8 @@ export default function About() {
       </p>
 
       <p style={{ marginTop: "1rem" }}>
-        <a href="/resume.pdf" target="_blank" rel="noreferrer">View My Resume (PDF)</a>
+              <a href="/resume.pdf" target="_blank" rel="noreferrer">View My Resume (PDF)</a>
+              {/* placeholder for resume */}
       </p>
     </section>
   );

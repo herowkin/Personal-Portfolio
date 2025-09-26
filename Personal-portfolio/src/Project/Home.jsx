@@ -3,7 +3,7 @@
  * Student: Braiden Jensen
  * StudentID: 301475238
  * Date: 2025-09-16
- * Purpose: Home page (hero layout)
+ * Purpose: Home page 
  */
 export default function Home({ setPage }) {
   return (

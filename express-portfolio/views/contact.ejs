@@ -1,0 +1,47 @@
+<%- include('partials/header', { title: 'Contact' }) %>
+
+<h1>Contact Me</h1>
+
+<div class="row g-4 mt-1">
+  <!-- Read-only contact info -->
+  <div class="col-md-5">
+    <div class="p-3 border rounded-3">
+      <p><strong>Email:</strong> braidenjensen@gmail.com</p>
+      <p><strong>Phone:</strong> 905-928-0808</p>
+      <p><strong>Location:</strong> Toronto, ON</p>
+    </div>
+  </div>
+
+  <!-- Interactive form -->
+  <div class="col-md-7">
+    <form method="post" action="/contact">
+      <div class="row g-3">
+        <div class="col-md-6">
+          <label class="form-label">First Name</label>
+          <input name="firstName" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Last Name</label>
+          <input name="lastName" class="form-control" required>
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Contact Number</label>
+          <input name="phone" class="form-control" value="">
+        </div>
+        <div class="col-md-6">
+          <label class="form-label">Email Address</label>
+          <input name="email" type="email" class="form-control" value="">
+        </div>
+        <div class="col-12">
+          <label class="form-label">Message</label>
+          <textarea name="message" rows="4" class="form-control" required></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary">Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+<%- include('partials/footer') %>

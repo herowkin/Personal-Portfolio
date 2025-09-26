@@ -1,0 +1,45 @@
+{
+  "about": {
+    "name": "Braiden Jensen",
+    "email": "braidenjensen@gmail.com",
+    "phone": "905-928-0808",
+    "location": "Toronto, ON",
+    "bio": "Developer focused on clean, accessible, user-friendly web apps.",
+    "photo": "/images/me.png",
+    "resume": "/docs/resume.pdf"
+  },
+
+  "projects": [
+    {
+      "emoji": "💻",
+      "title": "Personal Portfolio",
+      "role": "Frontend Dev",
+      "desc": "React + Vite site showcasing bio, services, and contact."
+    },
+    {
+      "emoji": "🕹️",
+      "title": "Bug Smasher Game",
+      "role": "Game Dev",
+      "desc": "HTML5 Canvas game with one-bug mechanic."
+    },
+    {
+      "emoji": "🗄️",
+      "title": "Library Management System",
+      "role": "C# Dev",
+      "desc": "OOP console app with interface and abstract class."
+    }
+  ],
+
+  "services": [
+    "Web Development (HTML, CSS, JS, React)",
+    "Node/Express APIs",
+    "Database & SQL basics",
+    "UI/UX polish & Accessibility"
+  ],
+
+  "contact": {
+    "email": "braidenjensen@gmail.com",
+    "phone": "905-928-0808",
+    "location": "Toronto, ON"
+  }
+}

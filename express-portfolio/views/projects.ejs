@@ -1,0 +1,34 @@
+<%- include('partials/header', { title: 'Projects' }) %>
+
+<h1>Projects</h1>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mt-1">
+
+  <% [
+    {emoji:'💻', title:'Personal Portfolio', 
+      role:'Frontend Dev', 
+      desc:'A React + Vite site for showcasing my bio, services, and contact form.'},
+
+    {emoji:'🕹️', title:'Bug Smasher Game', 
+      role:'Game Dev', 
+      desc:'A simple HTML5 Canvas game built for COMP125 – one-bug smasher, no difficulty curve.'},
+
+    {emoji:'🗄️', title:'Library Management System', 
+      role:'C# Dev', 
+      desc:'An OOP console app using interface + abstract class to manage Fiction and Non-Fiction books.'}
+  ].forEach(p => { %>
+
+    <div class="col">
+      <div class="card h-100 text-center p-4">
+        <div style="font-size:3rem;"><%= p.emoji %></div>
+        <h5 class="card-title mt-3"><%= p.title %></h5>
+        <p class="card-text"><strong>Role:</strong> <%= p.role %></p>
+        <p class="card-text"><%= p.desc %></p>
+      </div>
+    </div>
+
+  <% }) %>
+
+</div>
+
+<%- include('partials/footer') %>
